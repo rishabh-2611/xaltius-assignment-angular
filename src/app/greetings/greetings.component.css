@@ -1,0 +1,16 @@
+.greetings-container {
+  min-height: -webkit-fill-available;
+}
+.card {
+  border-radius: 10px !important;
+  margin-top: 40% !important;
+}
+.bg-light-blue{
+    background-color: #A0E2FC;
+}
+.bg-light-red{
+    background-color: #EF7F6D;
+}
+.bg-light-grey{
+    background-color: #9FA9AF;
+}
