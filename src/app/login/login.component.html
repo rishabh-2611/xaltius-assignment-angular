@@ -9,12 +9,12 @@
           <form ngNativeValidate class="form" #form (ngSubmit)="form.checkValidity()? onSubmit() : null">
             <div class="form-group">
               <label>Name :</label>
-              <input type="text" class="form-control" placeholder="Eg. Elon Musk" required autocomplete="off" name="name" [(ngModel)]="user.name">
+              <input type="text" class="form-control" placeholder="Eg. Elon Musk" required autocomplete="off" name="name" [(ngModel)]="user.name" value="user.name">
             </div>
             <div class="form-group">
               <label>Date of Birth :</label>
               <div class="input-group">
-                <input class="form-control calendar-input" (keypress)="restrictKeypress($event)" required autocomplete="off" placeholder="yyyy-mm-dd" name="user.dob" [(ngModel)]="user.dob"
+                <input class="form-control calendar-input" (keypress)="restrictKeypress($event)" required autocomplete="off" placeholder="yyyy-mm-dd" name="user.dob" [(ngModel)]="user.dob" value="user.dob"
                   ngbDatepicker #d="ngbDatepicker">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary calendar-button" (click)="d.toggle()" type="button"><i
@@ -24,7 +24,7 @@
             </div>
             <div class="form-group mt-5">
               <button class="btn btn-success col-4" type="submit">Submit</button>
-              <button class="btn btn-secondary col-4 ml-2" type="button">Reset</button>
+              <button class="btn btn-secondary col-4 ml-2" type="button" (click)="onReset()">Reset</button>
             </div>
           </form>
         </div>

@@ -47,6 +47,11 @@ export class LoginComponent implements OnInit {
     $e.preventDefault();
   }
 
+  onReset(){
+    this.user.name = "";
+    this.user.dob = null;
+  }
+
   onSubmit() {
     this.isSubmit = true;
 
