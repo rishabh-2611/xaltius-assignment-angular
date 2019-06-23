@@ -14,3 +14,6 @@
 .bg-light-grey{
     background-color: #9FA9AF;
 }
+button {
+  border-radius: 10px !important;
+}

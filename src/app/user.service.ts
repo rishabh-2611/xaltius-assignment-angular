@@ -34,7 +34,7 @@ export class UserService {
   // POST request
   getMessage(): Observable<any> {
     return this.http.post(
-      "http://localhost:8080/SpringMVC/process/age",
+      "https://xaltius-spring-rest-server.herokuapp.com/process/age",
       this.getUser(),
       this.httpOptions
     );
