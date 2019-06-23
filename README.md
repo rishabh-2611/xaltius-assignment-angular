@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
+## Routes
+```
+{
+    path: "",
+    component: LoginComponent
+  },
+  {
+    path: "greetings",
+    component: GreetingsComponent
+  },
+  {
+    path: "**",
+    redirectTo: ""
+  }
+}
+```
 
 ## Installation
 Run `npm install` to install all the dependencies listed in `package.json`. It will create `node_modules` folder.
@@ -18,14 +34,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Authors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [Rishabh Sontakke](https://github.com/rishabh-2611)
 
-## Running end-to-end tests
+## License
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
